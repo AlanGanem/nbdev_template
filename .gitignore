@@ -1,3 +1,32 @@
+### custom gitignore
+
+# Python secondary files
+__pycache__/
+*.py[cod]
+*$py.class
+.analysis/.ipynb_checkpoints
+
+# VS Code config file
+.vscode/
+
+# Datasets
+data/
+*.csv
+*.xlsx
+*.xlsb
+*.xls
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+### nbdev default .gitignore
 *.bak
 .gitattributes
 .last_checked
