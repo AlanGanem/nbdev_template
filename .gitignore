@@ -10,7 +10,6 @@ __pycache__/
 .vscode/
 
 # Datasets
-data/
 *.csv
 *.xlsx
 *.xlsb
