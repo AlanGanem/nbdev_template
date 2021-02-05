@@ -2,7 +2,7 @@ import glob
 
 def utf8encode(file_path):
 	'''
-	encodes a file to utf-8 and unicode charset
+	encodes a file to utf-8
 	'''	
 	with open(file_path, 'r+', encoding='utf-8', errors = 'replace') as file:				
 		file.write(file.read())
