@@ -4,18 +4,12 @@ def utf8encode(file_path):
 	'''
 	encodes a file to utf-8 and unicode charset
 	'''	
-	exc = []
-	encodings = ['utf-8','ascii','latin-1','CP1252']
-	for encoding in encodings:
-		try:
-			with open(file_path, 'r+', encoding=encoding, errors = 'replace') as file:				
-				file.write(file.read())
-				file.truncate()
-			print(f'Read {file_path} as {encoding} and converted to utf-8 (unicode)')
-			return
-		except Exception as e:
-			exc.append(e)
-	print(f'It was not possible to modify {file_path} with exceptions {exc}')
+	with open(file_path, 'r+', encoding='utf-8', errors = 'replace') as file:				
+		file.write(file.read())
+		file.truncate()
+	
+	print(f'Converted {file_path} utf-8 (unicode)')
+	return	
 
 def get_html_paths(roots):	
 	'''
